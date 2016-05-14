@@ -5,15 +5,15 @@ This tutorial shows you how to create a simple web app that extracts human faces
 
 You can try the live version of the app [here](https://cdn.jemsoft.io/facefinder/).
 
-The app uses Monocular Javascript SDK and two of Monocular API endpoints. With less 50 lines of code you can make an app that detects faces and crops each of them all in your browser. We are going to use [Face Detection](http://docs.jemsoft.co/?javascript#face-detection) and [Crop](http://docs.jemsoft.co/?javascript#crop) endpoints in this tutorial.
+The app uses Monocular Javascript SDK and two of Monocular API endpoints. With less than 50 lines of code you can make an app that detects faces and crops each of them all in your browser. We are going to use [Face Detection](http://docs.jemsoft.co/?javascript#face-detection) and [Crop](http://docs.jemsoft.co/?javascript#crop) endpoints in this tutorial.
 
 Ok. Let's get our hands dirty.
 
 If you haven't already, create a Monocular app for our web app from the dashboard. If you don't know how follow the instructions in the [documentation](http://docs.jemsoft.co/?javascript#getting-started). It's amazingly simple.
 
-Now that we have our App Id and secret we can start coding. Let's make a project folder and call it `facefinder`. It's recommended that you serve this folder with a http server locally, you can use [http-server](https://github.com/indexzero/http-server) to do this, it's a simple command-line http server.
+Now that we have our App Id and secret we can start coding. Let's make a project folder and call it `facefinder`. It's recommended that you serve this folder with a http server locally. You can use [http-server](https://github.com/indexzero/http-server) to do this, it's a simple command-line http server.
 
-Let's create a simple HTML page with 2 buttons and a text box so we can get an image file from the user. Our app is going to handle both local files and urls. Monocular accepts both images files and urls. When you pass a url, Monocular retrieves the image from the internet and process it.
+Let's create a simple HTML page with 2 buttons and a text box so we can get an image file from the user. Our app is going to handle both local files and urls. Monocular API accepts both images files and urls. When you pass a url, Monocular retrieves the image from the internet and processes it.
 
 Create an `index.html` file, we need a simple user interface for our face finder and a place to dump all the faces in. So the code for our HTML file would look something like this:
 
@@ -71,7 +71,7 @@ const facesElement = $('#faces');
 const resultElement = $('#result');
 ```
 
-Okay, let's write a function that detect faces using [Face-Detection](http://docs.jemsoft.co/?javascript#face-detection) endpoint and updates the `result` element with the number of faces detected.
+Okay, let's write a function that detects faces using [Face-Detection](http://docs.jemsoft.co/?javascript#face-detection) endpoint and updates the `result` element with the number of faces detected.
 
 ```javascript
   function detect(image) {
@@ -83,7 +83,7 @@ Okay, let's write a function that detect faces using [Face-Detection](http://doc
   }
 ```
 
-Where does the image come from? We need to make our file button and our URL button to call `detect` with image/url.
+Where does the image come from? We need to make our file button and our URL button to call `detect` with image or url.
 
 ```javascript
   uploadButton.on('change', e => detect(e.target.files[0]));
@@ -117,4 +117,4 @@ function detect(image) {
 }
 ```
 
-There you go! Our face finder app is ready! You can take look at the complete source code [here](https://github.com/Jemsoft/monocular-demo-facefinder).
+There you go! Our face finder app is now ready! You can take a look at the complete source code [here](https://github.com/Jemsoft/monocular-demo-facefinder).
