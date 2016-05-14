@@ -8,6 +8,7 @@
 
   const uploadButton = $('#uploadBtn');
   const urlButton = $('#urlBtn');
+  const urlInput = $('#url');
   const facesElement = $('#faces');
   const resultElement = $('#result');
   const spinnerElement = $('#spinner');
@@ -16,7 +17,7 @@
   uploadButton.on('change', e => detect(e.target.files[0]));
 
   // Url button handler
-  urlButton.on('click', () => detect($('url').val()));
+  urlButton.on('click', () => detect(urlInput.val()));
 
   // Finding faces using monocular
   function detect(image) {
