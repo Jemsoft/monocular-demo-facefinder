@@ -37,8 +37,8 @@
   // Cropping faces using monocular 
   function crop(image, face) {
     face.encodeType = 'JPEG';
-    Monocular.crop(image, face).then((image) => {
-      facesElement.append(image);
+    Monocular.crop(image, face).then((faceImage) => {
+      facesElement.append(faceImage);
     });
   }
 }());
