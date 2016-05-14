@@ -92,7 +92,7 @@ Where does the image come from? We need to make our file button and our URL butt
 
 That's it! Our app will now count the number of faces in an image.
 
-To make it more interesting let's use [Crop](http://docs.jemsoft.co/?javascript#crop) to extract the faces from the image and append them to the page. Let's write a crop function that uses the bounding box from face-detection to extract the face out of the image. Each face is represented by 2 points (top, left), (bottom, right). We can pass the points straight to crop since it accpets the same 2 points to crop an image, however we need to add our desired encoding type to the object.
+To make it more interesting let's use [Crop](http://docs.jemsoft.co/?javascript#crop) to extract the faces from the image and append them to the page. Let's write a crop function that uses the bounding box from face-detection to extract the face out of the image. Each face is represented by 2 points (top, left), (bottom, right). We can pass the points straight to crop since it accepts the same 2 points to crop an image, however we need to add our desired encoding type to the object.
 
 ```javascript
 function crop(image, face) {
@@ -103,7 +103,7 @@ function crop(image, face) {
 }
 ```
 
-Easy, right? Now we only need to call this function for every face in the image. Let's modify our `detect` funtion.
+Easy, right? Now we only need to call this function for every face in the image. Let's modify our `detect` function.
 
 ```javascript
 function detect(image) {
