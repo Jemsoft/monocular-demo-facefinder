@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Face Finder</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <section class="file-form text-xs-center">
+      <div class="container">
+        <h2>Face Finder</h2>
+        <br>
+        <p>
+          <input id="url" type="text" class="form-control" placeholder="paste a URL here...">
+        </p>
+        <p>
+          <a href="#" id="urlBtn" class="btn btn-primary">use the URL</a>
+          <span class="btn btn-primary btn-file">or choose a file...<input type="file" id="uploadBtn">
+        </span>
+        </p>
+        <p><img src="spinner.gif" class="spinner" id="spinner" /></p>
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <section class="face-album">
+      <div class="container">
+        <div class="row" id="faces">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jemsoft.io/monocular-javascript-sdk/sdk-0.1.0.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
