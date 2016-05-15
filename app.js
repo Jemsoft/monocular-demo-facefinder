@@ -2,8 +2,8 @@
 
   // Initializing Monocular
   Monocular.initialize({
-    clientId: '9285659d91de8e1ee957ce95f378b902',
-    clientSecret: '091baf225c2b34795c9dabac657115bc23a3cb48',
+    clientId: 'AppID',
+    clientSecret: 'AppSecret',
   });
 
   const uploadButton = $('#uploadBtn');

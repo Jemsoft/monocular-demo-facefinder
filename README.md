@@ -117,4 +117,4 @@ function detect(image) {
 }
 ```
 
-There you go! Our face finder app is now ready! You can take a look at the complete source code [here](https://github.com/Jemsoft/monocular-demo-facefinder).
+There you go! Our face finder app is now ready! You can look at the complete source code [here](https://github.com/Jemsoft/monocular-demo-facefinder).
