@@ -3,7 +3,6 @@
   // Initializing Monocular
   Monocular.initialize({
     clientId: 'AppID',
-    clientSecret: 'AppSecret',
   });
 
   const uploadButton = $('#uploadBtn');
