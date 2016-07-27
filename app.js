@@ -11,6 +11,10 @@
   const facesElement = $('#faces');
   const resultElement = $('#result');
   const spinnerElement = $('#spinner');
+  const exampleImage = $('.example-image');
+
+  // Example image handler
+  exampleImage.on('click', (e) => detect(e.target.currentSrc));
 
   // Upload button handler
   uploadButton.on('change', e => detect(e.target.files[0]));
