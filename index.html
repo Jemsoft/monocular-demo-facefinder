@@ -16,13 +16,20 @@
         <h2>Face Finder</h2>
         <br>
         <p>
-          <input id="url" type="text" class="form-control" placeholder="paste a URL here...">
+          <input id="url" type="text" class="form-control" placeholder="Paste a URL here...">
         </p>
         <p>
-          <a href="#" id="urlBtn" class="btn btn-primary">use the URL</a>
-          <span class="btn btn-primary btn-file">or choose a file...<input type="file" id="uploadBtn">
-        </span>
+          <a href="#" id="urlBtn" class="btn btn-primary">From URL</a>
+          <span class="btn btn-primary btn-file">From File<input type="file" id="uploadBtn"></span>
         </p>
+        <span> Or use an image below: </span>
+
+        <div>
+          <a href="#"><img class="example-image" src="images/ex1.jpg"/></a>
+          <a href="#"><img class="example-image" src="images/ex2.jpg"/></a>
+          <a href="#"><img class="example-image" src="images/ex3.jpg"/></a>
+        </div>
+
         <p><img src="spinner.gif" class="spinner" id="spinner" /></p>
         <p id="result"></p>
       </div>

@@ -38,3 +38,11 @@
   cursor: inherit;
   display: block;
 }
+
+.example-image {
+  border: 1px solid #777;
+  display: inline-block;
+  margin: 5px;
+  height: 180px;
+  width: auto;
+}
